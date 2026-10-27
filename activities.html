@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Activities | Angell E-Portfolio</title>
+<meta content="My Activities page of Angell E-Portfolio, Information Technology student at J.H. Cerilles State College." name="description"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link crossorigin="" href="https://cdnjs.cloudflare.com" rel="preconnect"/>
+
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Custom Stylesheet -->
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Ambient Animated Background Lights -->
+<div class="bg-ambient-glow">
+<div class="glow-orb glow-orb-1"></div>
+<div class="glow-orb glow-orb-2"></div>
+<div class="glow-orb glow-orb-3"></div>
+</div>
+<!-- Header / Navigation -->
+<header class="header">
+<div class="container nav-wrapper">
+<a class="logo" href="index.html">
+<div class="logo-img-wrapper">
+<img alt="AML Logo" class="brand-logo-img" decoding="async" src="assets/images/logo_aml_transparent.webp"/>
+</div>
+<span class="logo-text">ANGEL<span>.</span></span>
+</a>
+<ul class="nav-menu" id="navMenu">
+<li><a class="nav-link" href="index.html">Home</a></li>
+<li><a class="nav-link" href="aboutme.html">About Me</a></li>
+<li><a class="nav-link" href="projects.html">Projects</a></li>
+<li><a class="nav-link" href="certifications.html">Certifications</a></li>
+<li><a aria-current="page" class="nav-link active" href="activities.html">My Activities</a></li>
+</ul>
+<button aria-label="Toggle navigation menu" class="nav-toggle" id="navToggle">
+<i class="fas fa-bars"></i>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+
+<!-- About Me & Education Section -->
+
+<!-- Projects Section -->
+
+<!-- Certifications Section -->
+
+<!-- My Activities Section -->
+<section id="activities">
+<div class="container">
+<div class="section-header">
+<span class="section-tag"><i class="fas fa-tasks"></i> MY ACTIVITIES</span>
+<h2 class="section-title">My <span class="text-gradient-red">Activities</span></h2>
+<p class="section-subtitle">
+          Academic activity analysis, system modeling diagrams, and database documentation.
+        </p>
+</div>
+<div class="activities-grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));">
+<!-- Activity: Becoming a Professional IT Practitioner -->
+<div class="activity-card">
+<div class="activity-media" style="height: 250px;">
+<img alt="Becoming a Professional IT Practitioner Activity" decoding="async" src="assets/images/activity1_page1.webp"/>
+<span class="activity-category">IT Practitioner Activity</span>
+</div>
+<div class="activity-body">
+<h3 class="activity-title">Becoming a Professional IT Practitioner</h3>
+<p class="activity-desc">
+              Academic submission and comprehensive documentation on becoming a professional IT practitioner, computing ethics, and career development in information technology.
+            </p>
+<div class="activity-footer">
+<button class="activity-btn open-drive-btn" data-title="Becoming a Professional IT Practitioner Activity Files">
+<i class="fab fa-google-drive"></i> View Activity Files
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Modal Viewer for Google Drive -->
+<div aria-modal="true" class="modal-overlay" id="driveModal" role="dialog">
+<div class="modal-container">
+<div class="modal-header">
+<div class="modal-title-group">
+<div class="modal-title-icon"><i class="fab fa-google-drive"></i></div>
+<h3 class="modal-title" id="modalActivityTitle">Activity Drive Submissions</h3>
+</div>
+<button aria-label="Close modal" class="modal-close-btn" id="modalCloseBtn">
+<i class="fas fa-times"></i>
+</button>
+</div>
+<div class="modal-body">
+<iframe id="modalDriveIframe" src="about:blank" title="Google Drive Embedded Modal Folder Viewer"></iframe>
+</div>
+<div class="modal-footer">
+<span style="font-size: 0.85rem; color: var(--text-muted);">
+<i class="fas fa-info-circle" style="color: var(--red-bright);"></i> Viewing files embedded from Google Drive folder
+        </span>
+<a class="btn btn-primary" href="https://drive.google.com/drive/folders/1lHvphZJsTvEF-g6FkZyYKyuXcfyXnMCj?usp=sharing" id="modalOpenDriveLink" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;" target="_blank">
+<i class="fas fa-external-link-alt"></i> Open in Google Drive
+        </a>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 0.5rem;">
+<div class="logo-img-wrapper" style="height: 48px; padding: 0;">
+<img alt="AML Logo" class="brand-logo-img" decoding="async" loading="lazy" src="assets/images/logo_aml_transparent.webp" style="height: 44px;"/>
+</div>
+<h3 class="text-gradient-red" style="margin-bottom: 0; font-size: 1.4rem;">Angell | Student Portfolio</h3>
+</div>
+<p>Information Technology Student at J.H. Cerilles State College (JHCSC)</p>
+</div>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutme.html">About Me</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="certifications.html">Certifications</a></li>
+<li><a href="activities.html">My Activities</a></li>
+</ul>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Angell. All rights reserved. J.H. Cerilles State College (JHCSC) Student Portfolio.</p>
+</div>
+</div>
+</footer>
+<!-- Scroll To Top Button -->
+<button aria-label="Scroll to top" class="scroll-top-btn" id="scrollTopBtn">
+<i class="fas fa-chevron-up"></i>
+</button>
+<!-- JavaScript -->
+<script defer="" src="js/script.js"></script>
+</body>
+</html>

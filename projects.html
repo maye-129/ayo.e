@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects | Angell E-Portfolio</title>
+<meta content="Projects page of Angell E-Portfolio, Information Technology student at J.H. Cerilles State College." name="description"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link crossorigin="" href="https://cdnjs.cloudflare.com" rel="preconnect"/>
+
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Custom Stylesheet -->
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Ambient Animated Background Lights -->
+<div class="bg-ambient-glow">
+<div class="glow-orb glow-orb-1"></div>
+<div class="glow-orb glow-orb-2"></div>
+<div class="glow-orb glow-orb-3"></div>
+</div>
+<!-- Header / Navigation -->
+<header class="header">
+<div class="container nav-wrapper">
+<a class="logo" href="index.html">
+<div class="logo-img-wrapper">
+<img alt="AML Logo" class="brand-logo-img" decoding="async" src="assets/images/logo_aml_transparent.webp"/>
+</div>
+<span class="logo-text">ANGEL<span>.</span></span>
+</a>
+<ul class="nav-menu" id="navMenu">
+<li><a class="nav-link" href="index.html">Home</a></li>
+<li><a class="nav-link" href="aboutme.html">About Me</a></li>
+<li><a aria-current="page" class="nav-link active" href="projects.html">Projects</a></li>
+<li><a class="nav-link" href="certifications.html">Certifications</a></li>
+<li><a class="nav-link" href="activities.html">My Activities</a></li>
+</ul>
+<button aria-label="Toggle navigation menu" class="nav-toggle" id="navToggle">
+<i class="fas fa-bars"></i>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+
+<!-- About Me & Education Section -->
+
+<!-- Projects Section -->
+<section id="projects">
+<div class="container">
+<div class="section-header">
+<span class="section-tag"><i class="fas fa-laptop-code"></i> PROJECTS</span>
+<h2 class="section-title">My <span class="text-gradient-red">Projects</span></h2>
+<p class="section-subtitle">
+          Showcase of web application development, graphic design pubmats, and media collateral projects.
+        </p>
+</div>
+<div class="activities-grid">
+<!-- Project 1: ROTC Online Enrollment -->
+<div class="activity-card">
+<div class="activity-media">
+<img alt="ROTC Online Enrollment System Project" decoding="async" src="assets/images/rotc_system.webp"/>
+<span class="activity-category">Web System Project</span>
+</div>
+<div class="activity-body">
+<h3 class="activity-title">ROTC Online Enrollment &amp; Cadet Portal</h3>
+<p class="activity-desc">
+              Web-based management system designed for student cadet enrollment, officer command center administration, and database records tracking at JHCSC.
+            </p>
+<div class="activity-footer">
+<button class="activity-btn open-drive-btn" data-title="ROTC Online Enrollment &amp; Cadet Portal Project Files">
+<i class="fab fa-google-drive"></i> View Project Files
+              </button>
+</div>
+</div>
+</div>
+<!-- Project 2: JHCSC Esports Recruitment Pubmat -->
+<div class="activity-card">
+<div class="activity-media">
+<img alt="JHCSC Esports Recruitment Pubmat Project" decoding="async" loading="lazy" src="assets/images/jhcsc_esports_pubmat.webp"/>
+<span class="activity-category">Graphic Design Project</span>
+</div>
+<div class="activity-body">
+<h3 class="activity-title">JHCSC Esports Recruitment Pubmat</h3>
+<p class="activity-desc">
+              Official event publication artwork, digital promotional banner designs, and graphic collateral crafted for the JHCSC Esports Community campus organization.
+            </p>
+<div class="activity-footer">
+<button class="activity-btn open-drive-btn" data-title="JHCSC Esports Recruitment Pubmat Files">
+<i class="fab fa-google-drive"></i> View Project Files
+              </button>
+</div>
+</div>
+</div>
+<!-- Project 3: Campus Event Photostrip & Media Collateral -->
+<div class="activity-card">
+<div class="activity-media">
+<img alt="Campus Event Photostrip &amp; Media Collateral Project" decoding="async" loading="lazy" src="assets/images/photostrip_pubmat.webp"/>
+<span class="activity-category">Media &amp; Layout Project</span>
+</div>
+<div class="activity-body">
+<h3 class="activity-title">Campus Event Photostrip &amp; Media Collateral</h3>
+<p class="activity-desc">
+              Custom photostrip templates, event publication graphics, and multi-page promotional collateral developed for college celebrations and submissions.
+            </p>
+<div class="activity-footer">
+<button class="activity-btn open-drive-btn" data-title="Campus Event Photostrip &amp; Media Collateral Files">
+<i class="fab fa-google-drive"></i> View Project Files
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Certifications Section -->
+
+<!-- My Activities Section -->
+
+<!-- Interactive Modal Viewer for Google Drive -->
+<div aria-modal="true" class="modal-overlay" id="driveModal" role="dialog">
+<div class="modal-container">
+<div class="modal-header">
+<div class="modal-title-group">
+<div class="modal-title-icon"><i class="fab fa-google-drive"></i></div>
+<h3 class="modal-title" id="modalActivityTitle">Activity Drive Submissions</h3>
+</div>
+<button aria-label="Close modal" class="modal-close-btn" id="modalCloseBtn">
+<i class="fas fa-times"></i>
+</button>
+</div>
+<div class="modal-body">
+<iframe id="modalDriveIframe" src="about:blank" title="Google Drive Embedded Modal Folder Viewer"></iframe>
+</div>
+<div class="modal-footer">
+<span style="font-size: 0.85rem; color: var(--text-muted);">
+<i class="fas fa-info-circle" style="color: var(--red-bright);"></i> Viewing files embedded from Google Drive folder
+        </span>
+<a class="btn btn-primary" href="https://drive.google.com/drive/folders/1lHvphZJsTvEF-g6FkZyYKyuXcfyXnMCj?usp=sharing" id="modalOpenDriveLink" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;" target="_blank">
+<i class="fas fa-external-link-alt"></i> Open in Google Drive
+        </a>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 0.5rem;">
+<div class="logo-img-wrapper" style="height: 48px; padding: 0;">
+<img alt="AML Logo" class="brand-logo-img" decoding="async" loading="lazy" src="assets/images/logo_aml_transparent.webp" style="height: 44px;"/>
+</div>
+<h3 class="text-gradient-red" style="margin-bottom: 0; font-size: 1.4rem;">Angell | Student Portfolio</h3>
+</div>
+<p>Information Technology Student at J.H. Cerilles State College (JHCSC)</p>
+</div>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutme.html">About Me</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="certifications.html">Certifications</a></li>
+<li><a href="activities.html">My Activities</a></li>
+</ul>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Angell. All rights reserved. J.H. Cerilles State College (JHCSC) Student Portfolio.</p>
+</div>
+</div>
+</footer>
+<!-- Scroll To Top Button -->
+<button aria-label="Scroll to top" class="scroll-top-btn" id="scrollTopBtn">
+<i class="fas fa-chevron-up"></i>
+</button>
+<!-- JavaScript -->
+<script defer="" src="js/script.js"></script>
+</body>
+</html>
