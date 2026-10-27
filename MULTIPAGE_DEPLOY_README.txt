@@ -1,22 +1,10 @@
-ANGELL E-PORTFOLIO — MULTI-PAGE VERSION
+FINAL PERFORMANCE OPTIMIZATION — Angell E-Portfolio
 
-PAGES (upload all to GitHub repository root):
-index.html — Home
-aboutme.html — About Me
-projects.html — Projects
-certifications.html — Certifications
-activities.html — My Activities
-css/style.css — shared styles
-js/script.js — shared interactions
-assets/images/ — shared images
+Five independent HTML pages: index.html, aboutme.html, projects.html, certifications.html, activities.html.
+Shared CSS and JS folders remain in repository root.
 
-DEPLOYMENT:
-1. Back up existing repository.
-2. Extract this ZIP and upload its CONTENTS (not the ZIP file or a parent folder) to the GitHub Pages publishing branch root.
-3. Commit once and confirm successful GitHub Pages deployment.
-4. Test menu, all cards and buttons on mobile/desktop.
-5. Test PageSpeed separately on index.html, aboutme.html, projects.html, certifications.html, activities.html.
+Fixes: external Google Fonts and Font Awesome styles load non-render-blocking with noscript fallbacks; all static images receive intrinsic width and height; dynamically generated certification images receive dimensions. Original fonts, visual design, navigation and Google Drive modal behavior preserved.
 
-IMPORTANT: Google Drive buttons retain the same pre-existing shared folder for all projects/activities. Their intended separate folders were not supplied. Verify folder access.
-Scores from the old single-page site are NOT directly comparable to scores from these new pages; take a new baseline if formally comparing changes.
-This package is code-prepared and statically checked, but live GitHub deployment and external Google Drive behavior require verification.
+To deploy: backup your current GitHub repository; upload/replace all file contents of this ZIP in publishing branch main / (root) in ONE commit. Do not upload the ZIP as one file. Confirm GitHub Pages publish and manually test buttons/menus/images. Run PageSpeed Insights again on five HTML URLs. Score improvements are not guaranteed.
+
+Known limitations: GitHub Pages cache headers cannot be customized through these HTML files; third-party fonts and icons may still have network delays. External Google Drive content requires permission and network connectivity.

@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       title: 'Computer Hardware Basics',
       category: 'Certification',
-      image: 'assets/images/cert/Computer Hardware basics .webp'
+      image: 'assets/images/cert/Computer Hardware basics .webp', width: 930, height: 588
     },
     {
       title: 'Introduction to AI Literacy and Responsible Use',
       category: 'Certification',
-      image: 'assets/images/cert/Introduction to AI Literacy and Responsible Use.webp'
+      image: 'assets/images/cert/Introduction to AI Literacy and Responsible Use.webp', width: 688, height: 485
     }
   ];
 
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     certificationCards.innerHTML = CERTIFICATION_ITEMS.map((item) => `
       <div class="activity-card certification-card">
         <div class="activity-media cert-image-wrap" style="height: 300px;">
-          <img decoding="async" src="${item.image}" alt="${item.title}" class="cert-image-only">
+          <img decoding="async" src="${item.image}" alt="${item.title}" width="${item.width}" height="${item.height}" class="cert-image-only">
           <span class="activity-category cert-label">${item.category}</span>
         </div>
       </div>
