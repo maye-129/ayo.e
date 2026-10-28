@@ -1310,3 +1310,14 @@ img {
     height: 90vh;
   }
 }
+
+/* Lighthouse font-display audit: Font Awesome 6.4.0 solid icons.
+   Keep the exact icon font family/weight/source, but allow immediate fallback
+   while the remote font downloads. This overrides the CDN @font-face rule. */
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2") format("woff2");
+}
